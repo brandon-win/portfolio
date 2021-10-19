@@ -1,2 +1,2 @@
 # personal_website
-My portfolio websote
+My portfolio website
