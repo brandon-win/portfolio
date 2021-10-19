@@ -17,8 +17,6 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
-	font: inherit;
 	vertical-align: baseline;
   text-decoration: none;
   scroll-behavior: smooth;
@@ -158,6 +156,7 @@ table {
 }
 
 .btn__container {
+  opacity: 0;
   display: flex;
   justify-content: center;
   position: relative;
@@ -261,6 +260,11 @@ table {
 .delay5s {
   animation-delay: 5s;
 }
+
+.delay7s {
+  animation-delay: 7s;
+}
+
 
 /* animations */
 
