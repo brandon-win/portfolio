@@ -166,32 +166,18 @@ table {
 }
 
 .btn__container .navBtn {
+  position: relative;
+  width: 8rem;
+  height: 2rem;
   border: solid;
   border-color: var(--teal);
   cursor: pointer;
-}:after{
+  text-align: center;
+  font-size: 1.5rem;
+}::after{
   text-decoration: none;
 }
 
-.fadein {
-  animation: fadeIn ease 2s;
-  -webkit-animation: fadeIn ease 2s;;
-  -moz-animation: fadeIn ease 2s;;
-  -o-animation: fadeIn ease 2s;;
-  animation-fill-mode: forwards;
-}
-
-.delay1s {
-  animation-delay: 1s;
-}
-
-.delay3s  {
-  animation-delay: 3s;
-}
-
-.delay5s {
-  animation-delay: 5s;
-}
 /* Landing Page CSS */
 
 /* About me CSS */
@@ -223,6 +209,26 @@ table {
 
 
 /* animations */
+.fillLeft {
+  color: var(--teal);
+  background: linear-gradient(to left, var(--white) 50%, var(--teal) 50%) right;
+  background-size: 200%;
+  transition: .5s ease-out;
+}
+.fillLeft:hover {
+  color: var(--white);
+  background-position: left;
+}
+
+
+.fadein {
+  animation: fadeIn ease 2s;
+  -webkit-animation: fadeIn ease 2s;;
+  -moz-animation: fadeIn ease 2s;;
+  -o-animation: fadeIn ease 2s;;
+  animation-fill-mode: forwards;
+}
+
 @-webkit-keyframes fadeIn {
   0% { opacity: 0; }
   100% { opacity: 1; }
@@ -239,6 +245,23 @@ table {
   0% { opacity: 0; }
   100% { opacity: 1; }
 }
+
+.slideleft {
+
+}
+
+.delay1s {
+  animation-delay: 1s;
+}
+
+.delay3s  {
+  animation-delay: 3s;
+}
+
+.delay5s {
+  animation-delay: 5s;
+}
+
 /* animations */
 
 
