@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+/* font-family: 'Lato', sans-serif; */
+
+html, body, div, span, applet, object, iframe,
+p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  /* this is what allows me to navigate smoothly */
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+:root {
+  --teal: #4ECDC4;
+  --darkblue: #1A535C;
+  --white: #F7FFF7;
+  --black: #282442;
+}
+
+/* Start for web page CSS */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: 'Lato', sans-serif;
+  color: var(--white);
+}
+
+/* NavBar CSS */
+.navbar {
+  position: sticky;
+  display: flex;
+  top: 0;
+  background-color: var(--darkblue);
+  justify-content: space-between;
+  align-items: center;
+  width: 100% !important;
+  height: 4rem;
+  box-shadow: 0 0 4em 0 var(--black);
+  z-index: 1000;
+}
+
+.navbar .name__container {
+  position: relative;
+  display: inline;
+  width: 100%;
+  font-size: 1.5em;
+  font-weight: lighter;
+  margin-left: 0.2em;
+}
+
+.navbar .name__container p {
+  width: 100%;
+}
+
+.navbar .name__container span {
+  color: var(--teal);
+}
+
+.navbar .socials {
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+  height: auto;
+}
+
+.navbar .social__item {
+  position: relative;
+  flex-basis: auto;
+  width: 44px;
+  margin: 10px;
+  transition: margin-top 0.3s;
+}
+
+.navbar .socials .social__item:hover {
+  margin-top: 5px;
+}
+
+.navbar .header__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar .social__item svg:hover {
+  fill: var(--white);
+}
+/* NavBar CSS */
+
+/* Landing Page CSS */
+.intro__container {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white);
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.intro__container .text__container {
+  display: inline;
+  position: relative;
+}
+
+.intro__container .text__container p {
+  opacity: 0;
+  font-size: 3em;
+  color: var(--black);
+}
+
+.intro__container .text__container span {
+  opacity: 0;
+  color: var(--teal);
+}
+
+.btn__container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 10%;
+  width: 100%;
+}
+
+.btn__container .navBtn {
+  border: solid;
+  border-color: var(--teal);
+  cursor: pointer;
+}:after{
+  text-decoration: none;
+}
+
+.fadein {
+  animation: fadeIn ease 2s;
+  -webkit-animation: fadeIn ease 2s;;
+  -moz-animation: fadeIn ease 2s;;
+  -o-animation: fadeIn ease 2s;;
+  animation-fill-mode: forwards;
+}
+
+.delay1s {
+  animation-delay: 1s;
+}
+
+.delay3s  {
+  animation-delay: 3s;
+}
+
+.delay5s {
+  animation-delay: 5s;
+}
+/* Landing Page CSS */
+
+/* About me CSS */
+.bio__container {
+  background-color: red;
+  display: flex;
+  min-height: 92vh;
+  width: 100%;
+  color: var(--black);
+  flex-direction: inherit;
+}
+
+.bio__container .bio__header {
+  width: 100%;
+  background-color: blue;
+  text-align: center;
+}
+
+.bio__container .bio__header h1 {
+  text-transform: uppercase;
+}
+
+.bio__container .bio__content {
+  display: flex;
+  flex-direction: row;
+  margin: 2em;
+}
+/* About me CSS */
+
+
+/* animations */
+@-webkit-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-moz-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-o-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+/* animations */
+
+
+/* media queries */
+@media only screen and (max-width: 650px) {
+  .navbar {
+    height: 7em;
+    flex-direction: column;
+  }
+
+  .navbar .name__container {
+    margin-top: 0.2em;
+    width: 66%;
+  }
+
+  .navbar .socials {
+    justify-content: space-around;
+  }
+
+  .navbar .social__item svg {
+    width: 2em;
+    height: 2em;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+
+  .intro__container {
+    min-height: 85vh;
+  }
+
+  .intro__container .text__container p {
+    font-size: 2.5em;
+  }
+
+  .navbar .name__container {
+    display: none;
+  }
+
+  .navbar .socials {
+    align-items: center;
+    top: 50%;
+    height: 6em;
+    margin-top: -3em;
+  }
+  .navbar .socials .social__item svg {
+    width: 3em;
+    height: 3em;
+  }
+}
+
+
