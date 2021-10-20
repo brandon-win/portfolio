@@ -181,7 +181,6 @@ table {
 
 /* About me CSS */
 .bio__container {
-  background-color: red;
   display: flex;
   min-height: 92vh;
   width: 100%;
@@ -191,7 +190,6 @@ table {
 
 .bio__container .bio__header {
   width: 100%;
-  background-color: blue;
   text-align: center;
 }
 
@@ -288,6 +286,10 @@ table {
   .navbar .social__item svg {
     width: 2em;
     height: 2em;
+  }
+
+  .bio__container .bio__content {
+    flex-direction: column;
   }
 }
 
