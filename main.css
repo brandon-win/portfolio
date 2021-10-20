@@ -58,11 +58,11 @@ table {
 
 /* Start for web page CSS */
 .container {
+  background-color: var(--white);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   font-family: 'Lato', sans-serif;
-  color: var(--white);
 }
 
 /* NavBar CSS */
@@ -74,7 +74,7 @@ table {
   justify-content: space-between;
   align-items: center;
   width: 100% !important;
-  height: 4rem;
+  height: 4em;
   box-shadow: 0 0 4em 0 var(--black);
   z-index: 1000;
 }
@@ -89,7 +89,7 @@ table {
 }
 
 .navbar .name__container p {
-  width: 100%;
+  color: var(--white);
 }
 
 .navbar .name__container span {
@@ -135,7 +135,7 @@ table {
   box-sizing: border-box;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  height: 98vh;
   overflow: hidden;
 }
 
@@ -182,11 +182,11 @@ table {
 
 /* About me CSS */
 .bio__container {
-  background-color: var(--white);
+  background-color: var(--darkblue);
+  color: var(--white);
   display: flex;
-  min-height: 92vh;
+  height: auto;
   width: 100%;
-  color: var(--black);
   flex-direction: column;
 }
 
@@ -212,11 +212,25 @@ table {
 }
 
 .bio__container .bio__content .bio__text {
-  font-size: 1.2em;
+  font-size: 1.1em;
   margin: 0 0 1em 1em;
 }
-
 /* About me CSS */
+
+/* Projects */
+.projects__container {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white);
+  box-sizing: border-box;
+  align-items: center;
+  height: 100vh;
+}
+
+.project__item {
+  background-color: red;
+}
+/* Projects */
 
 
 /* animations */
@@ -230,7 +244,6 @@ table {
   color: var(--white);
   background-position: left;
 }
-
 
 .fadein {
   animation: fadeIn ease 2s;
@@ -258,8 +271,26 @@ table {
 }
 
 .slideleft {
-
+  animation: slideLeft ease 2s;
+  -webkit-animation: slideLeft ease 2s;;
+  -moz-animation: slideLeft ease 2s;;
+  -o-animation: slideLeft ease 2s;;
+  animation-fill-mode: forwards;
 }
+
+@-webkit-keyframes slideLeft {
+  100% { transform: translateX(0%); }
+}
+@-moz-keyframes slideLeft {
+  100% { transform: translateX(0%); }
+}
+@-o-keyframes slideLeft {
+  100% { transform: translateX(0%); }
+}
+@keyframes slideLeft {
+  100% { transform: translateX(0%); }
+}
+
 
 .delay1s {
   animation-delay: 1s;
@@ -282,7 +313,7 @@ table {
 
 
 /* media queries */
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 670px) {
   .navbar {
     height: 7em;
     flex-direction: column;
@@ -304,6 +335,10 @@ table {
 
   .bio__container .bio__content {
     flex-direction: column;
+  }
+
+  .bio__container .bio__content .bio__text {
+    margin: 1em;
   }
 }
 
