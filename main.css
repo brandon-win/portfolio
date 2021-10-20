@@ -162,6 +162,7 @@ table {
   position: relative;
   height: 10%;
   width: 100%;
+  margin: 1em;
 }
 
 .btn__container .navBtn {
@@ -181,11 +182,12 @@ table {
 
 /* About me CSS */
 .bio__container {
+  background-color: var(--white);
   display: flex;
   min-height: 92vh;
   width: 100%;
   color: var(--black);
-  flex-direction: inherit;
+  flex-direction: column;
 }
 
 .bio__container .bio__header {
@@ -202,6 +204,18 @@ table {
   flex-direction: row;
   margin: 2em;
 }
+
+.bio__container .bio__content .img__container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.bio__container .bio__content .bio__text {
+  font-size: 1.2em;
+  margin: 0 0 1em 1em;
+}
+
 /* About me CSS */
 
 
