@@ -254,9 +254,20 @@ table {
   text-align: left;
 }
 
-.project__info {
-
+.list__container {
+  margin: 1em;
 }
+
+.list {
+  list-style: circle;
+  margin-left: 1.2em;
+}
+
+.project__links {
+  display: flex;
+  background-color: gray;
+}
+
 /* Projects */
 
 
@@ -334,7 +345,6 @@ table {
 .delay7s {
   animation-delay: 7s;
 }
-
 
 /* animations */
 
