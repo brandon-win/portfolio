@@ -154,7 +154,6 @@ table {
 }
 
 .btn__container {
-  opacity: 0;
   display: flex;
   justify-content: center;
   position: relative;
@@ -163,8 +162,11 @@ table {
   margin: 1em;
 }
 
+.btn__container#landPage{
+  opacity: 0;
+}
+
 .btn__container .navBtn {
-  position: relative;
   width: 8rem;
   height: 2rem;
   border: solid;
@@ -233,7 +235,6 @@ table {
 }
 
 .projects__list {
-  background-color: blue;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -241,7 +242,6 @@ table {
 }
 
 .project__item {
-  background-color: red;
   margin: 1em;
 }
 
@@ -264,8 +264,16 @@ table {
 }
 
 .project__links {
+  margin: 0;
+  position: relative;
   display: flex;
-  background-color: gray;
+  flex-direction: row;
+  height: 4em;
+}
+
+.link__item {
+  display: flex;
+  justify-content: center;
 }
 
 /* Projects */
