@@ -73,7 +73,7 @@ table {
   justify-content: space-between;
   align-items: center;
   width: 100% !important;
-  height: 4em;
+  height: 8vh;
   box-shadow: 0 0 4em 0 var(--black);
   z-index: 1000;
 }
@@ -82,7 +82,7 @@ table {
   position: relative;
   display: inline;
   width: 100%;
-  font-size: 1.5em;
+  font-size: 4vh;
   font-weight: lighter;
   margin-left: 0.2em;
 }
@@ -145,7 +145,7 @@ table {
 
 .intro__container .text__container p {
   opacity: 0;
-  font-size: 3em;
+  font-size: 9vh;
   color: var(--black);
 }
 
@@ -158,7 +158,7 @@ table {
   display: flex;
   justify-content: center;
   position: relative;
-  height: 10%;
+  height: 3vh;
   width: 100%;
   margin: 1em;
 }
@@ -168,13 +168,13 @@ table {
 }
 
 .btn__container .navBtn {
-  width: 8rem;
-  height: 2rem;
+  width: 27vh;
+  height: 5vh;
   border: solid;
   border-color: var(--teal);
   cursor: pointer;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 4vh;
 }::after{
   text-decoration: none;
 }
@@ -197,6 +197,7 @@ table {
 }
 
 .bio__container .bio__header h1 {
+  font-size: 6vh;
   text-transform: uppercase;
 }
 
@@ -208,6 +209,7 @@ table {
 
 .bio__container .bio__content .img__container {
   display: flex;
+  justify-content: center;
   width: 100%;
   align-items: center;
 }
@@ -232,7 +234,7 @@ table {
 
 .projects__header {
   text-align: center;
-  font-size: 2rem;
+  font-size: 2vh;
 }
 
 .projects__list {
