@@ -312,6 +312,14 @@ table {
   background-position: center;
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: contain; /* Resize the background image to cover the entire container */
+}
+
+.media__container#HouseHub {
+  background-image: url('assets/HouseHub_Demo_screenshot.png');
+}
+
+.media__container#SonicDesign {
+  background-image: url('assets/SonicDesigns_results.png');
 
 }
 
@@ -383,7 +391,9 @@ table {
   100% { transform: translateX(0%); }
 }
 
-
+.hide {
+  display: none;
+}
 .delay1s {
   animation-delay: 1s;
 }
