@@ -186,12 +186,15 @@ table {
   background-color: var(--darkblue);
   color: var(--white);
   display: flex;
-  height: auto;
+  height: 100vh;
   width: 100%;
   flex-direction: column;
+  align-items: center;
 }
 
 .bio__container .bio__header {
+  position: relative;
+  height: auto;
   width: 100%;
   text-align: center;
 }
@@ -215,7 +218,7 @@ table {
 }
 
 .bio__container .bio__content .bio__text {
-  font-size: 1.1em;
+  font-size: 3vh;
   margin: 0 0 1em 1em;
 }
 /* About me CSS */
@@ -228,13 +231,13 @@ table {
   background-color: var(--white);
   box-sizing: border-box;
   align-items: center;
-  height: 100vh;
+  height: 300vh;
   width: 100%;
 }
 
 .projects__header {
   text-align: center;
-  font-size: 2vh;
+  font-size: 4vh;
 }
 
 .projects__list {
@@ -245,10 +248,15 @@ table {
 }
 
 .project__item {
+  position: relative;
+  display: flex;
+  flex-direction: row;
   margin: 1em;
 }
 
 .project__about {
+  width: 50%;
+  font-size: 3vh;
   display: flex;
   flex-direction: column;
 }
@@ -262,6 +270,7 @@ table {
 }
 
 .list {
+  font-size: 2vh;
   line-height: 1.4em;
   list-style: circle;
   margin-left: 1.2em;
@@ -272,6 +281,7 @@ table {
   position: relative;
   display: flex;
   flex-direction: row;
+  align-items: baseline;
   height: 4em;
 }
 
@@ -282,14 +292,34 @@ table {
 }
 
 .src__container {
-  font-size: 1.3em;
+  font-size: 3vh;
   font-weight: 550;
   display: flex;
-  align-items: center;
 }
 
 .src__container a {
   color: var(--teal);
+}
+
+.media__container {
+  position: relative;
+  display: flex;
+  width: 50%;
+  height: 40vh;
+  box-shadow: 2px 2px 7px 1px var(--black);
+  align-items: center;
+  background-image: url('assets/HouseHub_Demo_screenshot.png');
+  background-position: center;
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: contain; /* Resize the background image to cover the entire container */
+
+}
+
+.media {
+  position:relative;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
 }
 
 /* Projects */
@@ -401,6 +431,23 @@ table {
   .bio__container .bio__content .bio__text {
     margin: 1em;
   }
+
+  .project__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 1em;  }
+
+  .project__about {
+    width: 100%;
+  }
+
+  .media__container {
+    display: flex;
+    width: 100%;
+    height: 60vh;
+  }
+
 }
 
 @media only screen and (max-width: 375px) {
@@ -427,6 +474,19 @@ table {
     width: 3em;
     height: 3em;
   }
+
+  .bio__container .bio__content .bio__text {
+    font-size: 2vh;
+  }
+
+  .projects__header {
+    font-size: 3vh;
+  }
+
+  .project__item {
+    flex-direction: column;
+  }
+
 }
 
 
