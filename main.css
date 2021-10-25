@@ -332,7 +332,6 @@ table {
   height: 100%;
   cursor: pointer;
 }
-
 /* Projects */
 
 /* Contacts */
@@ -358,10 +357,24 @@ table {
 .contact p {
   font-size: 3vh
 }
+
+.contact a {
+  color: var(--white);
+}
+
+.svg__container {
+  margin-top: 1rem;
+} :hover {
+  margin: 0rem;
+}
+
+.svg__container svg:hover {
+  fill: var(--white);
+}
+
 /* Contacts */
 
 /* Footer */
-
 .footer {
   display: flex;
   justify-content: center;
@@ -376,8 +389,6 @@ table {
   margin-top: 2rem;
   font-size: 3vh;
 }
-
-
 /* Footer */
 
 /* animations */
@@ -390,18 +401,6 @@ table {
 
 .fillLeft:hover {
   color: var(--white);
-  background-position: left;
-}
-
-.fillLeftOpposite {
-  color: var(--white);
-  background: linear-gradient(to left, var(--white) 50%, var(--darkblue) 50%) right;
-  background-size: 200%;
-  transition: .5s ease-out;
-}
-
-.fillLeftOpposite:hover {
-  color: var(--white) !important;
   background-position: left;
 }
 
