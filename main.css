@@ -594,5 +594,9 @@ table {
   .project__links {
     align-items: center;
   }
+
+  .contact {
+    height: 50vh;
+  }
 }
 
