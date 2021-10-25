@@ -483,8 +483,8 @@ table {
     height: 185vh;
   }
 }
-@media only screen and (max-width: 670px) {
 
+@media only screen and (max-width: 670px) {
   .navbar {
     height: 9em;
     flex-direction: column;
@@ -571,6 +571,7 @@ table {
   }
 
   .bio__container {
+    height: 125vh;
     -webkit-clip-path: none;
     clip-path: none;
 
@@ -589,7 +590,7 @@ table {
   };
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 320px) {
   .project__links {
     align-items: center;
   }
