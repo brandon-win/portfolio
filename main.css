@@ -219,10 +219,12 @@ table {
   justify-content: center;
   width: 100%;
   align-items: center;
+  margin: 0 0 1rem;
 }
 
 .bio__container .bio__content .bio__text {
   font-size: 3vh;
+  font-weight: 300;
   margin: 0 0 1em 1em;
 }
 /* About me CSS */
@@ -467,6 +469,16 @@ table {
 
 
 /* media queries */
+@media only screen and (max-width: 900px) {
+  .bio__container {
+    height: 177vh;
+  }
+
+  .bio__container .bio__content {
+    flex-direction: column;
+  }
+}
+
 @media only screen and (max-width: 670px) {
   .navbar {
     height: 9em;
@@ -497,7 +509,7 @@ table {
   }
 
   .bio__container .bio__content .bio__text {
-    font-size: 1.5vh;
+    font-size: 2vh;
     margin: 1em;
   }
 
@@ -525,6 +537,10 @@ table {
 
 @media only screen and (max-width: 375px) {
 
+  .navbar {
+    height: 6em;
+  }
+
   .intro__container {
     min-height: 85vh;
   }
@@ -549,6 +565,7 @@ table {
   }
 
   .bio__container {
+    height: 115vh;
     -webkit-clip-path: none;
     clip-path: none;
 
