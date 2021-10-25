@@ -52,6 +52,7 @@ table {
   --darkblue: #1A535C;
   --white: #F7FFF7;
   --black: #282442;
+  --gray: #333;
 }
 
 /* Start for web page CSS */
@@ -158,7 +159,7 @@ table {
   display: flex;
   justify-content: center;
   position: relative;
-  height: 3vh;
+  height: auto;
   width: 100%;
   margin: 1em;
 }
@@ -167,7 +168,7 @@ table {
   opacity: 0;
 }
 
-.btn__container .navBtn {
+.navBtn {
   width: 27vh;
   height: 5vh;
   border: solid;
@@ -190,6 +191,8 @@ table {
   width: 100%;
   flex-direction: column;
   align-items: center;
+  -webkit-clip-path: polygon(0 0,100% 0,100% 80%,0 100%);
+  clip-path: polygon(0 0,100% 0,100% 80%,0 100%);
 }
 
 .bio__container .bio__header {
@@ -200,6 +203,7 @@ table {
 }
 
 .bio__container .bio__header h1 {
+  margin-top: 8rem;
   font-size: 6vh;
   text-transform: uppercase;
 }
@@ -231,7 +235,7 @@ table {
   background-color: var(--white);
   box-sizing: border-box;
   align-items: center;
-  height: 300vh;
+  height: 100%;
   width: 100%;
 }
 
@@ -320,7 +324,6 @@ table {
 
 .media__container#SonicDesign {
   background-image: url('assets/SonicDesigns_results.png');
-
 }
 
 .media {
@@ -332,6 +335,50 @@ table {
 
 /* Projects */
 
+/* Contacts */
+
+.contact {
+  color: var(--white);
+  position: relative;
+  width: 100%;
+  height: 45vh;
+  background: var(--darkblue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  -webkit-clip-path: polygon(0 15vh,100% 0,100% 100%,0 100%);
+  clip-path: polygon(0 15vh,100% 0,100% 100%,0 100%);
+}
+
+.contact h2 {
+  margin-top: 6rem;
+  font-size: 6vh;
+}
+
+.contact p {
+  font-size: 3vh
+}
+/* Contacts */
+
+/* Footer */
+
+.footer {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  background-color: var(--gray);
+  height: 20vh;
+  width: 100%;
+}
+
+.footer a {
+  color: var(--white);
+  margin-top: 2rem;
+  font-size: 3vh;
+}
+
+
+/* Footer */
 
 /* animations */
 .fillLeft {
@@ -340,8 +387,21 @@ table {
   background-size: 200%;
   transition: .5s ease-out;
 }
+
 .fillLeft:hover {
   color: var(--white);
+  background-position: left;
+}
+
+.fillLeftOpposite {
+  color: var(--white);
+  background: linear-gradient(to left, var(--white) 50%, var(--darkblue) 50%) right;
+  background-size: 200%;
+  transition: .5s ease-out;
+}
+
+.fillLeftOpposite:hover {
+  color: var(--white) !important;
   background-position: left;
 }
 
@@ -394,6 +454,7 @@ table {
 .hide {
   display: none;
 }
+
 .delay1s {
   animation-delay: 1s;
 }
@@ -409,14 +470,13 @@ table {
 .delay7s {
   animation-delay: 7s;
 }
-
 /* animations */
 
 
 /* media queries */
 @media only screen and (max-width: 670px) {
   .navbar {
-    height: 7em;
+    height: 9em;
     flex-direction: column;
   }
 
@@ -434,11 +494,17 @@ table {
     height: 2em;
   }
 
+  .bio__container {
+    -webkit-clip-path: none;
+    clip-path: none;
+  }
+
   .bio__container .bio__content {
     flex-direction: column;
   }
 
   .bio__container .bio__content .bio__text {
+    font-size: 1.5vh;
     margin: 1em;
   }
 
@@ -456,6 +522,10 @@ table {
     display: flex;
     width: 100%;
     height: 60vh;
+  }
+
+  .contact {
+    clip-path: none;;
   }
 
 }
@@ -485,8 +555,10 @@ table {
     height: 3em;
   }
 
-  .bio__container .bio__content .bio__text {
-    font-size: 2vh;
+  .bio__container {
+    -webkit-clip-path: none;
+    clip-path: none;
+
   }
 
   .projects__header {
