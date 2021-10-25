@@ -362,12 +362,6 @@ table {
   color: var(--white);
 }
 
-.svg__container {
-  margin-top: 1rem;
-} :hover {
-  margin: 0rem;
-}
-
 .svg__container svg:hover {
   fill: var(--white);
 }
